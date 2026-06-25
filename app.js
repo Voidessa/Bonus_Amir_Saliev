@@ -402,6 +402,11 @@ document.addEventListener("DOMContentLoaded", () => {
     const fullName = document.getElementById("input-q1").value.trim();
     const firstName = fullName.split(" ")[0];
     
+    // Format timestamp as DD.MM.YYYY HH:mm:ss
+    const now = new Date();
+    const pad = (num) => String(num).padStart(2, '0');
+    const formattedTimestamp = `${pad(now.getDate())}.${pad(now.getMonth() + 1)}.${now.getFullYear()} ${pad(now.getHours())}:${pad(now.getMinutes())}:${pad(now.getSeconds())}`;
+    
     // Prepare sheet dataset
     // Prefix everything with a single quote (') to force plain-text in Sheets and prevent formula parser errors
     const formData = {
@@ -413,7 +418,7 @@ document.addEventListener("DOMContentLoaded", () => {
       courses: "'" + document.getElementById("input-q6").value.trim(),
       income: "'" + document.querySelector('input[name="q7_income"]:checked').value,
       readiness: "'" + document.querySelector('input[name="q8_readiness"]:checked').value,
-      timestamp: "'" + new Date().toISOString()
+      timestamp: "'" + formattedTimestamp
     };
     
     // AJAX Request to Script URL

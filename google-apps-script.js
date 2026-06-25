@@ -54,7 +54,7 @@ function doPost(e) {
     // Extract values. If values already start with single quote, Google Sheets treats it as plain text and strips the visible quote.
     // However, if some parameters are undefined, set default empty string.
     var rowData = [
-      params.timestamp || new Date().toISOString(),
+      params.timestamp || ("'" + Utilities.formatDate(new Date(), "GMT+5", "dd.MM.yyyy HH:mm:ss")),
       params.name || "",
       params.phone || "",
       params.telegram || "",
