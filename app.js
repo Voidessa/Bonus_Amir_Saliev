@@ -101,7 +101,7 @@ const preloaderPhrases = {
 };
 
 // Target deployment spreadsheet Google Apps Script URL (Paste your URL here)
-const SHEET_SCRIPT_URL = "https://script.google.com/macros/s/AKfycby417wqj8Yp-Y4liVhu0n0yhHDhZWbcfCOWVMSFFoPwnjjSBHcLWwce08Fnyo6YuAu7/exec";
+const SHEET_SCRIPT_URL = import.meta.env.VITE_SHEET_SCRIPT_URL || "https://script.google.com/macros/s/AKfycby417wqj8Yp-Y4liVhu0n0yhHDhZWbcfCOWVMSFFoPwnjjSBHcLWwce08Fnyo6YuAu7/exec";
 
 /* ==========================================
    APP STATE & INITIALIZATION
