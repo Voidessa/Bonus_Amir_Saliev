@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title data-i18n="page-title">Amir Saliev — Eksklyuziv Bonus Dars</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Amir Salievdan yopiq bonus darsga kirish uchun so'rovnoma. O'zbekistondagi eng premium hamjamiyatga a'zo bo'ling.">
+  <meta name="keywords" content="Amir Saliev, Erkak Jamiyati, mentorlik, bonus dars, biznes, rivojlanish">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Amir Saliev — Eksklyuziv Bonus Dars">
+  <meta property="og:description" content="Yopiq bonus darsga kirish uchun so'rovnoma.">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts: Cinzel for premium serif title, Plus Jakarta Sans for modern clean UI -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- Canvas Confetti CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+<body class="dark-theme">
+
+  <!-- Interactive Preloader -->
+  <div id="preloader" class="preloader">
+    <div class="loader-content">
+      <div class="loader-spinner"></div>
+      <p id="loader-phrase" class="loader-phrase">Tizim yuklanmoqda...</p>
+    </div>
+  </div>
+
+  <!-- Ambient background glows -->
+  <div class="bg-glow bg-glow-1"></div>
+  <div class="bg-glow bg-glow-2"></div>
+
+  <div class="container">
+    
+    <!-- Header Section -->
+    <header class="header animate-fade-in">
+      <div class="logo-container">
+        <span class="logo-text">AMIR SALIEV</span>
+        <span class="logo-dot"></span>
+      </div>
+      
+      <div class="header-controls">
+        <!-- Language Switcher -->
+        <button id="lang-toggle" class="control-btn lang-btn" aria-label="Switch Language">
+          <span class="lang-text">UZ</span>
+          <span class="lang-divider">|</span>
+          <span class="lang-text dimmed">RU</span>
+        </button>
+        
+        <!-- Theme Toggle -->
+        <button id="theme-toggle" class="control-btn theme-btn" aria-label="Toggle Theme">
+          <!-- Sun icon -->
+          <svg class="theme-icon sun-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2"/>
+            <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+          <!-- Moon icon -->
+          <svg class="theme-icon moon-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <!-- Main Content Grid -->
+    <main class="main-content">
+      
+      <!-- Hero Title Section -->
+      <section class="hero-section animate-fade-in">
+        <div class="exclusive-badge">
+          <span class="badge-dot"></span>
+          <span data-i18n="exclusive-badge-text">FAQAT TANLANGANLAR UCHUN</span>
+        </div>
+        <h1 class="hero-title" data-i18n="hero-title">Yopiq Hamjamiyat Bonus Darsi</h1>
+        <p class="hero-subtitle" data-i18n="hero-subtitle">Quyidagi so'rovnomani to'ldiring va eksklyuziv bonus darsga kirish imkoniyatini qo'lga kiriting.</p>
+      </section>
+
+      <!-- Info Plaque Card Section -->
+      <section class="plaque-section animate-fade-in">
+        <div class="plaque-card">
+          <div class="plaque-image-wrapper">
+            <img class="plaque-image" src="assets/portrait.png" alt="Amir Saliev">
+            <div class="plaque-image-overlay"></div>
+          </div>
+          
+          <div class="plaque-details">
+            <h2 class="plaque-title" data-i18n="plaque-title">Darsda nimalarni o'rganasiz?</h2>
+            
+            <ul class="plaque-list">
+              <li>
+                <div class="bullet-icon">
+                  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z" fill="url(#gold-gradient)"/>
+                  </svg>
+                </div>
+                <span class="bullet-text" data-i18n="bullet-1">Qimmat sovg'alar va pul ishlatmasdan qizni o'zingga oshiq qilish</span>
+              </li>
+              <li>
+                <div class="bullet-icon">
+                  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z" fill="url(#gold-gradient)"/>
+                  </svg>
+                </div>
+                <span class="bullet-text" data-i18n="bullet-2">Nega ba'zi erkaklarni birinchi kundanoq hurmat qilishadi, boshqalarini esa yo'q</span>
+              </li>
+              <li>
+                <div class="bullet-icon">
+                  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z" fill="url(#gold-gradient)"/>
+                  </svg>
+                </div>
+                <span class="bullet-text" data-i18n="bullet-3">Qanday qilib qiz yo'qotishdan qo'rqadigan erkakka aylanish</span>
+              </li>
+              <li>
+                <div class="bullet-icon">
+                  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z" fill="url(#gold-gradient)"/>
+                  </svg>
+                </div>
+                <span class="bullet-text" data-i18n="bullet-4">Ayolning qiziqishini xiyonatdan ham tezroq yo'q qiladigan narsa nima</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Questionnaire Form Section -->
+      <section class="form-section animate-fade-in">
+        <div class="form-card">
+          <form id="questionnaire-form" novalidate>
+            
+            <!-- Q1: Name & Surname -->
+            <div class="form-group" id="group-q1">
+              <label for="input-q1" class="field-label">
+                <span class="question-num">1.</span>
+                <span data-i18n="label-q1">Ism va familiyangiz</span> <span class="required-star">*</span>
+              </label>
+              <div class="input-wrapper">
+                <input type="text" id="input-q1" name="q1_name" class="form-input" placeholder="Ism Familiya" required>
+                <div class="focus-border"></div>
+              </div>
+              <p class="error-text" data-i18n="error-required">Ushbu maydonni to'ldirish majburiy</p>
+            </div>
+
+            <!-- Q2: Phone Number -->
+            <div class="form-group" id="group-q2">
+              <label for="input-q2" class="field-label">
+                <span class="question-num">2.</span>
+                <span data-i18n="label-q2">Telefon raqamingiz</span> <span class="required-star">*</span>
+              </label>
+              <div class="input-wrapper">
+                <input type="text" id="input-q2" name="q2_phone" class="form-input" placeholder="+998 (90) 123-45-67" required>
+                <div class="focus-border"></div>
+              </div>
+              <p class="error-text" data-i18n="error-phone">Iltimos, telefon raqamingizni to'liq kiriting</p>
+            </div>
+
+            <!-- Q3: Telegram Handle -->
+            <div class="form-group" id="group-q3">
+              <label for="input-q3" class="field-label">
+                <span class="question-num">3.</span>
+                <span data-i18n="label-q3">Telegram username</span> <span class="required-star">*</span>
+              </label>
+              <div class="input-wrapper">
+                <input type="text" id="input-q3" name="q3_telegram" class="form-input" placeholder="@username" required>
+                <div class="focus-border"></div>
+              </div>
+              <p class="error-text" data-i18n="error-telegram">Iltimos, haqiqiy telegram usernameni kiriting (kamida 5 ta belgi)</p>
+            </div>
+
+            <!-- Q4: Age & Profile -->
+            <div class="form-group" id="group-q4">
+              <label for="input-q4" class="field-label">
+                <span class="question-num">4.</span>
+                <span data-i18n="label-q4">Yoshingiz va hozirgi faoliyatingiz</span> <span class="required-star">*</span>
+              </label>
+              <div class="input-wrapper">
+                <textarea id="input-q4" name="q4_age_profile" class="form-textarea" rows="3" placeholder="..." required></textarea>
+                <div class="focus-border"></div>
+              </div>
+              <p class="error-text" data-i18n="error-required">Ushbu maydonni to'ldirish majburiy</p>
+            </div>
+
+            <!-- Q5: Motivation -->
+            <div class="form-group" id="group-q5">
+              <label for="input-q5" class="field-label">
+                <span class="question-num">5.</span>
+                <span data-i18n="label-q5">Ushbu bonus darsdan ko'zlagan maqsadingiz nima?</span> <span class="required-star">*</span>
+              </label>
+              <div class="input-wrapper">
+                <textarea id="input-q5" name="q5_motivation" class="form-textarea" rows="3" placeholder="..." required></textarea>
+                <div class="focus-border"></div>
+              </div>
+              <p class="error-text" data-i18n="error-required">Ushbu maydonni to'ldirish majburiy</p>
+            </div>
+
+            <!-- Q6: Previous Courses -->
+            <div class="form-group" id="group-q6">
+              <label for="input-q6" class="field-label">
+                <span class="question-num">6.</span>
+                <span data-i18n="label-q6">Avval qanday kurslarda o'qigansiz? (Natijasi qanday bo'lgan?)</span> <span class="required-star">*</span>
+              </label>
+              <div class="input-wrapper">
+                <textarea id="input-q6" name="q6_courses" class="form-textarea" rows="3" placeholder="..." required></textarea>
+                <div class="focus-border"></div>
+              </div>
+              <p class="error-text" data-i18n="error-required">Ushbu maydonni to'ldirish majburiy</p>
+            </div>
+
+            <!-- Q7: Income level -->
+            <div class="form-group" id="group-q7">
+              <span class="field-label">
+                <span class="question-num">7.</span>
+                <span data-i18n="label-q7">O'rtacha oylik daromadingiz qancha?</span> <span class="required-star">*</span>
+              </span>
+              <div class="radio-group-container">
+                <label class="custom-radio">
+                  <input type="radio" name="q7_income" value="No Income" required>
+                  <span class="radio-checkmark"></span>
+                  <span class="radio-label-text" data-i18n="income-opt-1">Daromadga ega emasman</span>
+                </label>
+                <label class="custom-radio">
+                  <input type="radio" name="q7_income" value="Under 3M">
+                  <span class="radio-checkmark"></span>
+                  <span class="radio-label-text" data-i18n="income-opt-2">3 000 000 UZS gacha</span>
+                </label>
+                <label class="custom-radio">
+                  <input type="radio" name="q7_income" value="3M - 7M">
+                  <span class="radio-checkmark"></span>
+                  <span class="radio-label-text" data-i18n="income-opt-3">3 000 000 - 7 000 000 UZS</span>
+                </label>
+                <label class="custom-radio">
+                  <input type="radio" name="q7_income" value="7M - 15M">
+                  <span class="radio-checkmark"></span>
+                  <span class="radio-label-text" data-i18n="income-opt-4">7 000 000 - 15 000 000 UZS</span>
+                </label>
+                <label class="custom-radio">
+                  <input type="radio" name="q7_income" value="15M - 30M">
+                  <span class="radio-checkmark"></span>
+                  <span class="radio-label-text" data-i18n="income-opt-5">15 000 000 - 30 000 000 UZS</span>
+                </label>
+                <label class="custom-radio">
+                  <input type="radio" name="q7_income" value="30M - 60M">
+                  <span class="radio-checkmark"></span>
+                  <span class="radio-label-text" data-i18n="income-opt-6">30 000 000 - 60 000 000 UZS</span>
+                </label>
+                <label class="custom-radio">
+                  <input type="radio" name="q7_income" value="Above 60M">
+                  <span class="radio-checkmark"></span>
+                  <span class="radio-label-text" data-i18n="income-opt-7">60 000 000 UZS dan ko'p</span>
+                </label>
+              </div>
+              <p class="error-text" data-i18n="error-radio">Iltimos, variantlardan birini tanlang</p>
+            </div>
+
+            <!-- Q8: Readiness to study -->
+            <div class="form-group" id="group-q8">
+              <span class="field-label">
+                <span class="question-num">8.</span>
+                <span data-i18n="label-q8">Mentorlik dasturida o'qishga tayyorligingiz?</span> <span class="required-star">*</span>
+              </span>
+              <div class="radio-group-container">
+                <label class="custom-radio">
+                  <input type="radio" name="q8_readiness" value="Ready Now" required>
+                  <span class="radio-checkmark"></span>
+                  <span class="radio-label-text" data-i18n="ready-opt-1">Darhol boshlashga tayyorman</span>
+                </label>
+                <label class="custom-radio">
+                  <input type="radio" name="q8_readiness" value="Planning Soon">
+                  <span class="radio-checkmark"></span>
+                  <span class="radio-label-text" data-i18n="ready-opt-2">Yaqin orada boshlashni rejalashtiryapman</span>
+                </label>
+                <label class="custom-radio">
+                  <input type="radio" name="q8_readiness" value="Information Only">
+                  <span class="radio-checkmark"></span>
+                  <span class="radio-label-text" data-i18n="ready-opt-3">Faqat ma'lumot olish uchun</span>
+                </label>
+              </div>
+              <p class="error-text" data-i18n="error-radio">Iltimos, variantlardan birini tanlang</p>
+            </div>
+
+            <!-- Global Error Notification -->
+            <div id="form-error-notice" class="form-error-notice">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z" fill="currentColor"/>
+              </svg>
+              <span data-i18n="form-error-msg">Iltimos, barcha majburiy maydonlarni to'g'ri to'ldiring!</span>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="submit-container">
+              <button type="submit" id="submit-btn" class="submit-btn">
+                <span class="btn-text" data-i18n="submit-btn-text">Yuborish & Darsni Olish</span>
+                <span class="btn-spinner"></span>
+                <span class="btn-glow"></span>
+              </button>
+            </div>
+
+          </form>
+        </div>
+      </section>
+
+      <!-- Success State Overlay/Card (Hidden by Default) -->
+      <section id="success-section" class="success-section hidden">
+        <div class="success-card">
+          <div class="success-icon-wrapper">
+            <svg class="success-svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="12" cy="12" r="10" fill="url(#gold-gradient-bg)" />
+              <path d="M9 12l2 2 4-4" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </div>
+          
+          <h2 class="success-title">
+            <span data-i18n="success-title-prefix">Tabriklaymiz,</span>
+            <span id="user-display-name">Ism</span>!
+          </h2>
+          
+          <p class="success-message" data-i18n="success-msg">Ma'lumotlaringiz muvaffaqiyatli qabul qilindi. Bonus darsni yuklab olish uchun quyidagi tugmani bosib, yopiq kanalimizga a'zo bo'ling:</p>
+          
+          <a href="https://t.me/+_3f0CSNotTk1M2U6" class="tg-cta-button" target="_blank" rel="noopener noreferrer">
+            <span class="tg-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69.01-.03.01-.14-.07-.2-.08-.06-.19-.04-.27-.02-.11.02-1.93 1.23-5.46 3.62-.51.35-.98.53-1.4.52-.46-.01-1.35-.26-2.01-.48-.81-.27-1.46-.42-1.4-.88.03-.24.37-.49 1.02-.75 3.99-1.74 6.66-2.88 7.99-3.43 3.8-1.57 4.59-1.85 5.1-.1.11.04.14.07.15.11z"/>
+              </svg>
+            </span>
+            <span data-i18n="tg-btn-text">Yopiq Telegram Kanalga Kirish</span>
+            <span class="tg-btn-glow"></span>
+          </a>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer animate-fade-in-delayed">
+      <p class="copyright">&copy; 2026 Amir Saliev. <span data-i18n="footer-copyright">Barcha huquqlar himoyalangan.</span></p>
+    </footer>
+
+  </div>
+
+  <!-- Reusable SVG Gradients -->
+  <svg width="0" height="0" class="svg-defs">
+    <defs>
+      <linearGradient id="gold-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#FFE082"/>
+        <stop offset="100%" stop-color="#D4AF37"/>
+      </linearGradient>
+      <linearGradient id="gold-gradient-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#FFE082"/>
+        <stop offset="100%" stop-color="#D4AF37"/>
+      </linearGradient>
+    </defs>
+  </svg>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
