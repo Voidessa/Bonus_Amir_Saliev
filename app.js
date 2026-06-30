@@ -110,7 +110,7 @@ const SHEET_SCRIPT_URL = import.meta.env.VITE_SHEET_SCRIPT_URL || "https://scrip
 document.addEventListener("DOMContentLoaded", () => {
   
   // Theme & Language variables
-  let currentLang = localStorage.getItem("lang") || "uz";
+  let currentLang = "uz";
   let currentTheme = localStorage.getItem("theme") || "dark";
   
   // DOM Elements
@@ -188,19 +188,7 @@ document.addEventListener("DOMContentLoaded", () => {
      ========================================== */
   
   langToggle.addEventListener("click", () => {
-    const langBtnTexts = langToggle.querySelectorAll(".lang-text");
-    
-    if (currentLang === "uz") {
-      currentLang = "ru";
-      langBtnTexts[0].classList.add("dimmed");
-      langBtnTexts[1].classList.remove("dimmed");
-    } else {
-      currentLang = "uz";
-      langBtnTexts[0].classList.remove("dimmed");
-      langBtnTexts[1].classList.add("dimmed");
-    }
-    
-    localStorage.setItem("lang", currentLang);
+    currentLang = (currentLang === "uz") ? "ru" : "uz";
     updateLocalization(currentLang);
   });
 
@@ -504,6 +492,18 @@ document.addEventListener("DOMContentLoaded", () => {
         }
       }
     });
+    
+    // Update language toggle button visual state
+    const langBtnTexts = langToggle.querySelectorAll(".lang-text");
+    if (langBtnTexts.length >= 2) {
+      if (lang === "uz") {
+        langBtnTexts[0].classList.remove("dimmed");
+        langBtnTexts[1].classList.add("dimmed");
+      } else {
+        langBtnTexts[0].classList.add("dimmed");
+        langBtnTexts[1].classList.remove("dimmed");
+      }
+    }
     
     // Specifically fix placeholders if placeholders have dynamic localizer strings
     if (lang === "uz") {
